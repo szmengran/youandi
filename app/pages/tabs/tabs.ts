@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {HomePage} from '../home/home';
 import {AboutPage} from '../about/about';
 import {ContactPage} from '../contact/contact';
-import {AccountPage} from '../account/account';
+import {PersonalPage} from '../personal/personal';
 
 @Component({
   templateUrl: 'build/pages/tabs/tabs.html'
@@ -20,6 +20,6 @@ export class TabsPage {
     this.tab1Root = HomePage;
     this.tab2Root = AboutPage;
     this.tab3Root = ContactPage;
-    this.tab4Root = AccountPage;
+    this.tab4Root = PersonalPage;
   }
 }

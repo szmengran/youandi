@@ -29,3 +29,15 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+.idea
+.idea/*
+.idea*
+platforms/**/
+platforms/platforms.json
+plugins/ios.json
+plugins/android.json
+plugins/fetch.json
+plugins/**/
+node_modules
+npm-debug.log
