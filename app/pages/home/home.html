@@ -1,17 +1,25 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar dark>
+    <ion-title>你&我</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="home">
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>app/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="http://image.gzdemi.com:8080/imageController/showImage.do?PictureId=1cf50e232ae843c5bebbda21ee4d0348&FilePath=/link/imagese/filesources/head_logo/2016/05/07/b1911bd0-75e0-4389-8944-ba6b94bcd85d.jpg&width=200&height=200&quality=0.75">
+        </ion-avatar>
+        <h2>Joe</h2>
+        <p>Ugh. As if.</p>
+      </ion-item>
+      <ion-item-options side="right">
+        <button danger>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
